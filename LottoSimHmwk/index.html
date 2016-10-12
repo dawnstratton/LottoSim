@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+ 
+	<title>SimProject</title>
+	<!--  --><style></style>
+</head>
+
+<body>
+    <script src="js/script.js"></script>
+   <!-- <script src="js/testGenRndNum.js"></script> -->
+    
+    <h1>Enter your 4 lucky numbers</h1>
+    <h4>Select 4 distinct numbers from 1 - 10 inclusive. No Duplicate numbers!!</h4>
+<!--
+    <p>Funds Available: </p>
+    <p id="funds"></p>
+-->
+    <br/>
+    <div id="show"></div>
+    <br/>
+    <!--  Form  -->
+	<form class="form-inline">
+	   <div class="container">
+	             <!--  build a form with 4 inputs and a button that call function getInputs min 1 max 10 allr fiedls rerquired  -->
+         <label>Num1</label>
+         <input id="num1" type ="number" min="1" max="10" required/>
+        <label>Num2</label>
+         <input id="num2" type ="number" min="1" max="10" required/>
+        <label>Num3</label>
+         <input id="num3" type ="number" min="1" max="10" required/>
+            <label>Num4</label>
+         <input id="num4" type ="number" min="1" max="10" required/>   
+        </div>
+        <br/>
+        <button onclick="">Clear Nums</button>
+    </form>
+    <!-- -->
+    <br/>
+    <button id="betbtn" onclick="playersNums()">Bet</button>
+    <button onclick="playersAgain()">BetAgain</button>
+    
+    <p>Your numbers:</p>
+    <p id="demo"></p>
+ <!--
+    <p>Click the start button to generate 4 random numbers</p>
+    <button id="startBtn" onclick="init()">Start</button>
+ -->
+    <p> The random numbers are:</p>
+    <p id="rndNum"></p>
+    
+    <br/>
+<!-- <button onclick="calculateWinning()">Wins</button>
+-->
+
+    <p>These are your winnings:</p>
+    <p id="winnings"></p>
+    <button onclick="quit()">Quit</button>
+
+
+<p>Play again</p>
+    
+    
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
